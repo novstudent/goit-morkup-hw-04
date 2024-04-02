@@ -24,6 +24,7 @@ body {
 }
 .container {
   width: 1200px;
+  outline: 1px solid red;
 
   padding-left: 15px;
   padding-right: 15px;
@@ -106,12 +107,17 @@ ul {
 .header-kontact {
   margin-left: auto;
   display: flex;
+  align-items: center;
 
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
   color: var(--gray-col);
   text-decoration: none;
+}
+.header-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 .kontact {
   padding-top: 32px;
@@ -125,7 +131,14 @@ ul {
 /*===========================
  секція герой */
 .section-hero {
-  background: #2f303a;
+  background-color: #2f303a;
+
+  background: url(../images/hero.jpg) rgba(5, 6, 15, 0.4);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
   text-align: center;
 
   padding-top: 200px;
@@ -191,6 +204,20 @@ ul {
   font-size: 14px;
   line-height: 1.71429;
   color: var(--gray-col);
+}
+
+.feature-icon {
+  padding: 25px 100px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+.icon {
+  width: 70px;
+  height: 70px;
+  margin: 0px;
 }
 
 /* секція 4 чим ми займаїмось */
