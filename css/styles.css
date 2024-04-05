@@ -24,7 +24,7 @@ body {
 }
 .container {
   width: 1200px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 
   padding-left: 15px;
   padding-right: 15px;
@@ -45,6 +45,7 @@ img {
 ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 /*==================================
@@ -123,10 +124,6 @@ ul {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.header-kontact,
-.header-nav {
-  list-style: none;
-}
 
 /*===========================
  секція герой */
@@ -183,7 +180,6 @@ ul {
 }
 .features {
   display: flex;
-  list-style: none;
 }
 .post {
   width: 270px;
@@ -246,15 +242,12 @@ ul {
 }
 .our-team {
   display: flex;
-
-  list-style: none;
 }
 .img-team {
   margin-right: 30px;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
   background: #fff;
-  height: 368px;
 }
 .img-team:last-child {
   margin-right: 0px;
@@ -275,14 +268,79 @@ ul {
   font-size: 16px;
   color: var(--gray-col);
   text-align: center;
+  margin-bottom: 16px;
 }
 .name-work {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+/*=== іконки ===================*/
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
 
+  border-radius: 50%;
+}
+.socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+/* hover для іконок */
+.social-icon {
+  fill: #afb1b8;
+}
+.socials-link:hover,
+.socials-link:focus {
+  background-color: #2196f3;
+}
+.socials-link:hover .social-icon,
+.socials-link:focus .social-icon {
+  fill: #fff;
+}
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/*секція 6 постійні клієнти */
+.our-clients {
+  padding-top: 88px;
+  padding-bottom: 94px;
+}
+.client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+}
+.client-link:hover,
+.client-link:focus {
+  border-color: #2196f3;
+}
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
+  fill: #2196f3;
+}
+.client-icon {
+  fill: #afb1b8;
+}
 /*===================================
- секція 6 підвал */
+ секція 7 підвал */
 .footer-main {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -310,7 +368,7 @@ ul {
   font-size: 14px;
   line-height: 1.71429;
   color: var(--white-col);
-  margin: 20px 0px 0px 0px;
+  margin: 20px 70px 0px 0px;
 }
 .address-mail,
 .address-tel {
@@ -330,6 +388,22 @@ ul {
   padding: 0px;
   list-style: none;
   text-decoration: none;
+}
+
+.futer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-social {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.socials-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footikon .social-icon {
+  fill: #fff;
 }
 
 /* ==================================================
@@ -411,7 +485,6 @@ ul {
   color: var(--gray-col);
 }
 .projects {
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
