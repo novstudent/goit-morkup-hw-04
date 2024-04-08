@@ -14,7 +14,6 @@ body {
   font-family: var(--main-font);
   background-color: var(--white-col);
   letter-spacing: 0.03em;
-  color: var(--primary-color);
 }
 
 /* контейнери для секцій div container */
@@ -51,7 +50,7 @@ ul {
 /*==================================
  секція heder навігація ,логотип*/
 .header {
-  border-bottom: 1px solid #ececec;
+  border-color: 1px solid #ececec;
 }
 .heder-container {
   display: flex;
@@ -65,6 +64,7 @@ ul {
 
   color: var(--accent-color);
   text-decoration: none;
+  outline: none;
 }
 .accent {
   color: #000;
@@ -81,6 +81,7 @@ ul {
   letter-spacing: 0.02em;
   color: var(--primary-color);
   text-decoration: none;
+  outline: none;
 }
 .item-nav {
   margin-right: 50px;
@@ -115,8 +116,11 @@ ul {
   letter-spacing: 0.02em;
   color: var(--gray-col);
   text-decoration: none;
+  outline: none;
 }
 .header-icon {
+  width: 10px;
+  height: 16px;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -127,10 +131,17 @@ ul {
 
 /*===========================
  секція герой */
+.hero-img {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #c4c4c4;
+  background-image: linear-gradient(rgba(5, 6, 15, 0.4), rgba(5, 6, 15, 0.4)),
+    url(../images/hero.jpg);
+}
 .section-hero {
-  background-color: #2f303a;
-
-  background: url(../images/hero.jpg) rgba(5, 6, 15, 0.4);
+  /* background-color: #2f303a; */
 
   background-repeat: no-repeat;
   background-position: center;
@@ -156,11 +167,11 @@ ul {
 }
 
 .main-btn {
-  display: inline-block;
+  /* display: inline-block; */
   border-radius: 4px;
   padding: 10px 32px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: #2196f3;
+  /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15); */
+  /* background: #2196f3; */
 
   font-weight: 700;
   font-size: 16px;
@@ -203,7 +214,9 @@ ul {
 }
 
 .feature-icon {
-  padding: 25px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #f5f4fa;
   border-radius: 4px;
   width: 270px;
@@ -300,6 +313,7 @@ ul {
 .socials-link:hover,
 .socials-link:focus {
   background-color: #2196f3;
+  outline: #2196f3;
 }
 .socials-link:hover .social-icon,
 .socials-link:focus .social-icon {
@@ -324,6 +338,7 @@ ul {
   align-items: center;
   justify-content: center;
   border: 1px solid #afb1b8;
+
   border-radius: 4px;
   width: 170px;
   height: 92px;
@@ -331,11 +346,13 @@ ul {
 .client-link:hover,
 .client-link:focus {
   border-color: #2196f3;
+  outline: none;
 }
 .client-link:hover .client-icon,
 .client-link:focus .client-icon {
   fill: #2196f3;
 }
+
 .client-icon {
   fill: #afb1b8;
 }
@@ -358,6 +375,7 @@ ul {
   font-size: 26px;
   color: var(--accent-color);
   text-decoration: none;
+  outline: none;
 }
 .footer-studio {
   color: var(--white-col);
@@ -382,6 +400,7 @@ ul {
 .footer:hover,
 .footer:focus {
   color: #ffffff;
+  outline: none;
 }
 .footer {
   margin: 0px;
@@ -395,7 +414,13 @@ ul {
   align-items: baseline;
 }
 .footer-social {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: #fff;
+
   margin-bottom: 20px;
 }
 
@@ -417,6 +442,10 @@ ul {
 .nav:focus {
   color: var(--white-col);
   background-color: var(--accent-color);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
+  background: #2196f3;
+  outline: none;
 }
 
 .btn-nav {
@@ -432,6 +461,7 @@ ul {
   padding: 6px 22px;
   border-radius: 4px;
   border: none;
+  outline: none;
 }
 .btn {
   font-family: 'Roboto', sans-serif;
@@ -440,7 +470,7 @@ ul {
   line-height: 1.625;
 
   background-color: #f5f4fa;
-  color: #212121;
+  /* color: #212121; */
 
   cursor: pointer;
   padding: 6px 22px;
@@ -464,6 +494,11 @@ ul {
 }
 
 /* секція проекти */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 .proect {
   padding: 20px 24px;
   border-right: 1px solid #eee;
@@ -484,12 +519,14 @@ ul {
   line-height: 1.875;
   color: var(--gray-col);
 }
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
 
 .project {
   text-decoration: none;
+  outline: none;
+}
+.item:hover,
+.item:focus {
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+    0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  background: #fff;
 }
