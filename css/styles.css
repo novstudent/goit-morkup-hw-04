@@ -363,6 +363,9 @@ ul {
   padding-bottom: 60px;
   background: #2f303a;
 }
+.footer-item {
+  margin-right: 70px;
+}
 .footer-mail {
   margin-bottom: 9px;
 }
@@ -386,10 +389,10 @@ ul {
   font-size: 14px;
   line-height: 1.71429;
   color: var(--white-col);
-  margin: 20px 70px 0px 0px;
+  margin: 20px 0px 0px 0px;
 }
-.address-mail,
-.address-tel {
+.addres-mail,
+.addres-tel {
   font-family: var(--main-font);
   font-style: normal;
   font-size: 14px;
@@ -524,8 +527,8 @@ ul {
   text-decoration: none;
   outline: none;
 }
-.item:hover,
-.item:focus {
+.project:hover .proect,
+.project:focus .proect {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
   background: #fff;
